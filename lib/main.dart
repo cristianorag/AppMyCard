@@ -14,29 +14,18 @@ class MeuApp extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget> [
-             Container(
-
-
-              color: Colors.white,
-              child: Text('Container 1'),
+            children: <Widget>[
+             CircleAvatar(
+               backgroundImage: AssetImage('imagens/cristiano.png'),
+               radius: 50.0,
              ),
-             SizedBox(
-               width: 50.0,
-             ),
-             Container(
-
-
-               color: Colors.blue,
-               child: Text('Container 2'),
-             ),
-             Container(
-
-
-               color: Colors.red,
-               child: Text('Container 3'),
-             ),
+              Text('Cristiano Ramos',
+               style: TextStyle(
+                 fontSize: 40.0,
+                 color: Colors.white,
+                 fontWeight: FontWeight.bold,
+               ),
+              ),
             ],
           ),
         ),
