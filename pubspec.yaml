@@ -30,3 +30,12 @@ flutter:
 
   assets:
    - imagens/cristiano.png
+
+  fonts:
+    - family: Pacifico
+      fonts:
+        - asset: fontes/Pacifico-Regular.ttf
+
+    - family: Source Sans Pro
+      fonts:
+        - asset: fontes/SourceSansPro-Regular.ttf
