@@ -35,7 +35,64 @@ class MeuApp extends StatelessWidget {
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
                 ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      size: 25.0,
+                      color: Colors.deepOrange,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '+55 1234 2345',
+                      style: TextStyle(
+                        color:Colors.deepOrange,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
 
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.mail,
+                      size: 25.0,
+                      color: Colors.deepOrange,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'email@email.com',
+                      style: TextStyle(
+                        color:Colors.deepOrange,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
