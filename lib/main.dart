@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MeuApp extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center ,
             children: <Widget>[
              CircleAvatar(
                backgroundImage: AssetImage('imagens/cristiano.png'),
@@ -36,63 +38,54 @@ class MeuApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                color: Colors.white,
+              SizedBox(
+                height: 20.0,
+                width: 250.0,
+                child: Divider(
+                  color: Colors.deepOrange.shade100,
+                ),
+              ),
+              Card(
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                child: ListTile(
+                    leading:Icon(
                       Icons.phone,
                       size: 25.0,
                       color: Colors.deepOrange,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
+                  title:Text(
                       '+55 1234 2345',
                       style: TextStyle(
                         color:Colors.deepOrange,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
-
                       ),
                     ),
-                  ],
                 ),
               ),
-              Container(
-                color: Colors.white,
+              Card(
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.mail,
-                      size: 25.0,
-                      color: Colors.deepOrange,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'email@email.com',
-                      style: TextStyle(
-                        color:Colors.deepOrange,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-
+                  child: ListTile(
+                    leading:Icon(
+                        Icons.mail,
+                        size: 25.0,
+                        color: Colors.deepOrange,
                       ),
-                    ),
-                  ],
-                ),
+                      title:Text(
+                        'email@email.com',
+                        style: TextStyle(
+                          color:Colors.deepOrange,
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20.0,
+                        ),
+                      ),
+                  ),
               ),
             ],
           ),
